@@ -7,6 +7,7 @@ from nltk import FreqDist
 
 def rank(query, linksWithKey, keywords, updateFreq, lastModified, nonWorkingLinks, pageAge,
          domainAge, loadTime):
+    """returns a rank value relative for each query"""
     rank=0
     rank += len(linksWithKey)
 
